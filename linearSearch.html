@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Linear Search Visualization</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+  <div class="nav-back">
+    <a href="index.html">← Back to Index</a>
+  </div>
+
+  <div class="settingBox">
+    Animation Speed (1-5): 
+    <input 
+      type="number" 
+      value="2" 
+      placeholder="1-5" 
+      max="5" min="1" 
+      id="speedBtn" 
+      onchange="speedChange()" 
+    />
+  </div>
+
+  <div class="layout d-flex">
+    <div class="binaryBox">
+      <h1>Linear Search Visualization</h1>
+      <p>Array:</p>
+      <div id="array2"></div>
+
+      <div class="d-flex">
+        <button onclick="generateArray2()">Generate New Array</button>
+        <p class="p-3">Target:</p>
+        <input type="number" id="target2" />
+        <button class="ml-3" onclick="linearSearch()">Search</button>
+        <p class="p-3">Result:</p>
+        <span class="p-3" id="result2"></span>
+      </div>
+
+      <div class="mt-3">
+        <button id="showBtn2">Concept of Linear Search</button>
+      </div>
+      <div class="mt-3" id="content2" style="display: none;">
+        <!-- Placeholder for concept explanation. -->
+        <p>
+          Linear search sequentially checks each element of the list until a match is found 
+          or the whole list has been searched. It’s simple but can be slow for large datasets.
+        </p>
+      </div>
+
+      <!-- Additional "box" for highlighting current index in linear search -->
+      <div class="box box4" id="box4"></div>
+    </div>
+
+    <!-- Linear Search Pseudocode / Code Sample -->
+    <div>
+      <div class="codeBox">
+        <div class="code2">for (let i = 0; i &lt; array.length; i++) {</div>
+        <div class="code2 tab-1">if (array[i] == target) {</div>
+        <div class="code2 tab-2">return i;</div>
+        <div class="code2 tab-1">}</div>
+        <div class="code2">}</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/linearSearch.js"></script>
+</body>
+</html>

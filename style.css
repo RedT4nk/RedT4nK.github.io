@@ -1,0 +1,173 @@
+/* style.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body / Global */
+  body {
+    font-family: Arial, sans-serif;
+    background: lightgoldenrodyellow;
+    padding: 20px;
+  }
+  
+  .index-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .index-links {
+    margin-top: 30px;
+  }
+  
+  .btn-link {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    background-color: #45a049;
+  }
+  
+  /* Navigation Back Link */
+  .nav-back {
+    margin-bottom: 20px;
+  }
+  .nav-back a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  .nav-back a:hover {
+    color: #45a049;
+  }
+  
+  /* Layout classes */
+  .layout {
+    padding-top: 30px;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .p-3 {
+    padding: 15px;
+  }
+  .ml-3 {
+    margin-left: 15px;
+  }
+  .mt-3 {
+    margin-top: 15px;
+  }
+  
+  /* Array items */
+  .array-item,
+  .array-item2 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px;
+    border: 1px solid black;
+  }
+  
+  /* Buttons and inputs */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  
+  input[type=number] {
+    padding: 5px;
+    width: 60px;
+  }
+  
+  /* Boxes (highlighter squares) */
+  .box {
+    width: 30px;
+    height: 30px;
+    border: 3px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .box1 {
+    border-color: red;
+  }
+  .box2 {
+    border-color: blueviolet;
+  }
+  .box3 {
+    border-color: blue;
+  }
+  .box4 {
+    border-color: orange;
+  }
+  
+  /* Container for array display */
+  #array, 
+  #array2 {
+    width: 1200px;
+    position: relative;
+    margin: 0;
+  }
+  
+  /* Index number panel for binary search */
+  #indexNum {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size: 20px;
+  }
+  
+  /* The big container for binary or linear "box" area */
+  .binaryBox {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Code styling */
+  .codeBox {
+    padding: 10px;
+    border: 1px solid gray;
+    margin-right: 30px;
+    width: 400px;
+  }
+  .code,
+  .code2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .tab-1 {
+    padding-left: 20px;
+  }
+  .tab-2 {
+    padding-left: 40px;
+  }
+  .tab-3 {
+    padding-left: 60px;
+  }
+  
+  /* Setting box for speed input */
+  .settingBox {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 30px;
+  }
+  
